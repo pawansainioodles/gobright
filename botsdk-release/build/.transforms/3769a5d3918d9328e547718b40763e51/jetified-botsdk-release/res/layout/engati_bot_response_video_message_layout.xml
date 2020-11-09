@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/bot_rsp_video_message_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/bot_rsp_video_sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/bot_rsp_video_message_profile"
+        app:layout_constraintLeft_toRightOf="@+id/bot_rsp_video_message_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/bot_rsp_video_imageview"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="8dp"
+        android:background="@color/grey"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/bot_rsp_video_message_profile"
+        app:layout_constraintLeft_toRightOf="@+id/bot_rsp_video_message_profile"
+        app:layout_constraintTop_toBottomOf="@+id/bot_rsp_video_sender_name"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/bot_rsp_play_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_play_circle_outline_white_48dp"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintBottom_toBottomOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintLeft_toLeftOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintEnd_toEndOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintRight_toRightOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintTop_toTopOf="@+id/bot_rsp_video_imageview" />
+
+    <TextView
+        android:id="@+id/bot_rsp_video_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintLeft_toLeftOf="@+id/bot_rsp_video_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/bot_rsp_video_imageview"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

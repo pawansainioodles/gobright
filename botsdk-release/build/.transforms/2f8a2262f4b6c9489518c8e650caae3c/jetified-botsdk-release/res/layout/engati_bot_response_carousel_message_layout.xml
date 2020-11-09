@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_profile_carousel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:srcCompat = "@drawable/circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bot_response_carousel_recycler_view"
+        android:layout_marginStart="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bot_response_carousel_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/image_profile_carousel"
+        app:layout_constraintTop_toBottomOf="@id/text_message_name"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:id="@+id/carousel_view_left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:srcCompat="@drawable/ic_card_scroller_left"
+        app:layout_constraintBottom_toBottomOf="@id/bot_response_carousel_recycler_view"
+        app:layout_constraintStart_toStartOf="@id/bot_response_carousel_recycler_view"
+        app:layout_constraintTop_toTopOf="@id/bot_response_carousel_recycler_view" />
+
+    <ImageView
+        android:id="@+id/carousel_view_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_card_scroller_right"
+        app:layout_constraintBottom_toBottomOf="@id/bot_response_carousel_recycler_view"
+        app:layout_constraintEnd_toEndOf="@id/bot_response_carousel_recycler_view"
+        app:layout_constraintTop_toTopOf="@id/bot_response_carousel_recycler_view" />
+
+    <TextView
+        android:id="@+id/text_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12:11"
+        tools:visibility="visible"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/bot_response_carousel_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@id/bot_response_carousel_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/bot_response_carousel_recycler_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

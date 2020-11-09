@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/bot_rsp_options_message_profile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/bot_rsp_options_sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Sender Name"
+        app:layout_constraintLeft_toRightOf="@+id/bot_rsp_options_message_profile"
+        app:layout_constraintStart_toEndOf="@+id/bot_rsp_options_message_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/bot_rsp_options_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/rounded_rectangle_grey"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        tools:text="Options message"
+        android:textColor="#4e4c4c"
+        app:layout_constraintLeft_toRightOf="@+id/bot_rsp_options_message_profile"
+        app:layout_constraintStart_toEndOf="@+id/bot_rsp_options_message_profile"
+        app:layout_constraintTop_toBottomOf="@+id/bot_rsp_options_sender_name"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/bot_rsp_options_msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/bot_rsp_options_message"
+        app:layout_constraintStart_toStartOf="@+id/bot_rsp_options_message"
+        app:layout_constraintTop_toBottomOf="@+id/bot_rsp_options_message"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/bot_rsp_options_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="18dp"
+        app:flexWrap="wrap"
+        app:justifyContent="center"
+        app:flexDirection="row"
+        app:layout_constraintLeft_toLeftOf="@+id/bot_rsp_options_message"
+        app:layout_constraintStart_toStartOf="@+id/bot_rsp_options_message"
+        app:layout_constraintTop_toBottomOf="@+id/bot_rsp_options_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

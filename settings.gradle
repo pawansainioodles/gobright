@@ -1,0 +1,3 @@
+include ':botsdk-release'
+include ':app'
+rootProject.name='GoBright'

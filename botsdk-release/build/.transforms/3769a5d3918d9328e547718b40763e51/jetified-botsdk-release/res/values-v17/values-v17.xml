@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="botTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorPrimary">@color/colorPrimaryBotActvity</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:textDirection">locale</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBotActvityDark</item>
+        <item name="colorAccent">@color/colorBotActvityAccent</item>
+
+    </style>
+</resources>

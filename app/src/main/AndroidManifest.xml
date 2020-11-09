@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ai.gobright">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.ai.gobright.HomeActivity.HomeActivity"
+            android:theme="@style/AppThemee"></activity>
+        <activity android:name="com.ai.gobright.WelcomeActivity"></activity>
+        <activity android:name="com.ai.gobright.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ai.gobright.BotActivity"
+            android:theme="@style/BotTheme"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name="com.ai.gobright.MainActivity"
+          ></activity>
+    </application>
+
+</manifest>

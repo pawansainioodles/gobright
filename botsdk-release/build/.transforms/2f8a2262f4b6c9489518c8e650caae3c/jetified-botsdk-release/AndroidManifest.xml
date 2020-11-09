@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.en.botsdk"
+    android:versionCode="13"
+    android:versionName="1.3.18" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:supportsRtl="true" >
+        <activity
+            android:name="com.en.botsdk.ui.ChatWebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|fontScale|screenLayout"
+            android:theme="@style/botTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.en.botsdk.ui.ChatActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|fontScale|screenLayout"
+            android:theme="@style/botTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.en.botsdk.ui.PlayVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|fontScale|screenLayout"
+            android:theme="@style/VideoTheme" />
+        <activity
+            android:name="com.en.botsdk.ui.IdentityActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|fontScale|screenLayout"
+            android:theme="@style/BotTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.en.botsdk.PlayAudioActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|locale|fontScale|screenLayout"
+            android:theme="@style/VideoTheme" />
+    </application>
+
+</manifest>

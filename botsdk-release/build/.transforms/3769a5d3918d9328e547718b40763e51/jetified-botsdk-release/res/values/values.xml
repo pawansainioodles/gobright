@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_right_to_left">false</bool>
+    <color name="colorAccent">#FF28ACD7</color>
+    <color name="colorBackButton">#0076FE</color>
+    <color name="colorBackButtonVideo">#fdfdfd</color>
+    <color name="colorBotActvityAccent">#FF4081</color>
+    <color name="colorDefault">#818181</color>
+    <color name="colorGrey">#F6F6F6</color>
+    <color name="colorPrimaryBotActvity">#f7f7f7</color>
+    <color name="colorPrimaryBotActvityDark">#e7e7e7</color>
+    <color name="colorPrimaryDark">#1D9EDB</color>
+    <color name="darkRed">#C64D4D</color>
+    <color name="grey">#dadada</color>
+    <color name="light_Red">#CC0000</color>
+    <color name="recieved_msg_holder">#F6F6F6</color>
+    <dimen name="audio_seekbar_margin">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="message_margin">20dp</dimen>
+    <string name="app_name">BotSDK</string>
+    <string name="audio_action">Audio Action</string>
+    <string name="audio_file_error">No audio files found</string>
+    <string name="audio_no_name">No name</string>
+    <string name="autocomplete_type">autocomplete</string>
+    <string name="configuration_error">Please provide all the configuration param</string>
+    <string name="continue_to_chat">Continue</string>
+    <string name="done">Done</string>
+    <string name="end_of_flow">End of flow</string>
+    <string name="enter_attribute">Enter attribute</string>
+    <string name="enter_field">Enter Field</string>
+    <string name="enter_message">Enter message</string>
+    <string name="error_msg">error</string>
+    <string name="error_msg_not_supported">Sorry, seems like message is not yet supported by client</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="identity_title">Please enter your details</string>
+    <string name="intialization_error">Please initialize Chat SDK</string>
+    <string name="mandate_warning">Input Mandatory for all fields</string>
+    <string name="powered_by_text">Powered by</string>
+    <string name="recognizer_not_supported">Please install voice recognizer to use this feature</string>
+    <string name="reconnect">Click here to reconnect</string>
+    <string name="select_an_option">Select an option</string>
+    <string name="select_option_from_above">Select an option from above</string>
+    <string name="skip">Skip</string>
+    <string name="start_typing_to_search">Start typing to search</string>
+    <string name="this_field_shows_the_empty_fields">This field shows the empty fields</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="upload_file"><![CDATA[Browse & Select file]]></string>
+    <string name="url">URL</string>
+    <string name="validate_inputs">Validating Inputs</string>
+    <style name="AudioTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Dialog_Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="IdentityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--        <item name="android:windowIsFloating">true</item>
+ Customize your theme here. -->
+        <item name="colorPrimary">@color/light_Red</item>
+        <item name="colorPrimaryDark">@color/darkRed</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ProgressTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorAccent">@android:color/black</item>
+    </style>
+    <style name="VideoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorBackButton</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="botTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorPrimary">@color/colorPrimaryBotActvity</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBotActvityDark</item>
+        <item name="colorAccent">@color/colorBotActvityAccent</item>
+    </style>
+    <style name="mytheme" parent="@style/Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="colorPrimary">@color/colorPrimaryBotActvity</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBotActvityDark</item>
+        <item name="colorAccent">@color/colorBotActvityAccent</item>
+        <item name="android:textColorSecondary">@color/colorBackButton</item>
+    </style>
+</resources>

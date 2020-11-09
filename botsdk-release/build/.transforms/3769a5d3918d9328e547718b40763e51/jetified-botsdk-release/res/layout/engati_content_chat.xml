@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/engati_bot_activity_chat">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:srcCompat ="@drawable/wallpaper_default_color"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox_identifier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerview_message_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox_identifier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- A horizontal line between the chatbox and RecyclerView -->
+    <View
+        android:id="@+id/layout_chatbox_identifier"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="0dp"
+        android:background="#dfdfdf"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/brandedtextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/iv_web_menu"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackground"
+            app:srcCompat="@drawable/ic_menu_black_24dp"
+            android:visibility="gone"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/edittext_chatbox"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edit_text"
+            android:imeActionId="@+id/send"
+            tools:hint="@string/enter_message"
+            android:imeActionLabel="Send"
+            android:imeOptions="actionSend"
+            android:maxLines="6"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textview_option"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingStart="5dp"
+            android:paddingEnd="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="6dp"
+            android:text="@string/select_an_option"
+            android:textSize="17sp"
+            android:visibility="gone"
+            android:paddingRight="4dp" />
+
+        <Button
+            android:id="@+id/btn_block_reconnect"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_border"
+            android:text="@string/reconnect"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/button_chatbox_send"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="visible"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_upload"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableEnd="@drawable/ic_close_black_24dp"
+        android:drawableRight="@drawable/ic_close_black_24dp"
+        android:paddingTop="6dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_chatbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/layout_chatbox"
+        app:layout_constraintTop_toTopOf="@+id/layout_chatbox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/brandedtextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="20dp"
+        android:text="Powered by ChatBot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BotTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimaryBotActvity</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBotActvityDark</item>
+        <item name="colorAccent">@color/colorBotActvityAccent</item>
+        <item name="android:textColorSecondary">@color/colorBackButton</item>
+        <!--<item name="android:homeAsUpIndicator">@drawable/back_button_image</item>-->
+    </style>
+    <style name="ProgressTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorAccent">@android:color/black</item>
+    </style>
+    <style name="VideoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorBackButton</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="mytheme" parent="Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimaryBotActvity</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBotActvityDark</item>
+        <item name="colorAccent">@color/colorBotActvityAccent</item>
+        <item name="android:textColorSecondary">@color/colorBackButton</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
